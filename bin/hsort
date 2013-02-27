@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const hsort = require('../');
+const argv = require('optimist').argv;
+
+process.stdin.resume();
+
+var input = {};
+
+function concat(obj) {
+  obj.data = '';
+  return function (data) { obj.data += data }
+}
+
+process.stdin.on('data', concat(input));
+process.stdin.on('end', function () {
+  const lines = hsort(input.data.trim().split('\n'));
+  if (argv.r || argv.reverse)
+    lines.reverse();
+  process.stdout.write(lines.join('\n'));
+  process.stdout.write('\n');
+});
