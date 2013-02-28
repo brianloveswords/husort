@@ -12,9 +12,10 @@ $ npm install -g husort
 
 ## CLI
 
-```
+```bash
 $ du -h /path/ | husort
 ```
+
 Options:
 * `-r | --reverse`: reverse the order of the sorting.
 
