@@ -1,0 +1,33 @@
+{
+  "name": "husort",
+  "version": "0.0.1",
+  "description": "Human-readable filesize sorter",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "bin": "bin/husort",
+  "dependencies": {
+    "line-stream": "~0.0.0",
+    "optimist": "~0.3.5"
+  },
+  "devDependencies": {
+    "tap": "~0.4.0"
+  },
+  "scripts": {
+    "test": "make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brianloveswords/husort.git"
+  },
+  "keywords": [
+    "du",
+    "human",
+    "readable"
+  ],
+  "author": "Brian J. Brennan",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "317438b31575e00fe894a9b828f57e54bdb29ab5"
+}

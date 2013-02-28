@@ -1,9 +1,27 @@
-# <project name>
-[![Build Status](https://secure.travis-ci.org/brianloveswords/<project>)](http://travis-ci.org/brianloveswords/<project>)
+# husort
+[![Build Status](https://secure.travis-ci.org/brianloveswords/husort)](http://travis-ci.org/brianloveswords/husort)
 
 # Install
+```bash
+$ npm install husort
+```
 
 # Usage
+
+## CLI
+
+```
+$ du -h /path/ | husort
+```
+Options:
+* -r|--reverse
+
+## Library
+
+### husort(array)
+
+Sort an array of strings where each entry is prefixed by (potentially)
+human readable file sizes.
 
 # License
 

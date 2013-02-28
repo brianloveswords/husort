@@ -17,7 +17,7 @@ const SIZES = {
   'Y': YOTTABYTE
 }
 
-const sizeRegex = /([0-9]+(?:.[0-9]+)?)(B|K|M|G|T)\s/;
+const sizeRegex = /([0-9]+(?:.[0-9]+)?)(B|K|M|G|T)\s/i;
 function toBytes(string) {
   return parseInt(string.replace(sizeRegex, function (match, number, qualifier) {
     return number * (SIZES[qualifier.toUpperCase()] || NaN) + ' ';
