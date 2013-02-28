@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const hsort = require('../');
+const husort = require('../');
 const argv = require('optimist').argv;
 
 process.stdin.resume();
@@ -14,7 +14,7 @@ function concat(obj) {
 
 process.stdin.on('data', concat(input));
 process.stdin.on('end', function () {
-  const lines = hsort(input.data.trim().split('\n'));
+  const lines = husort(input.data.trim().split('\n'));
   if (argv.r || argv.reverse)
     lines.reverse();
   process.stdout.write(lines.join('\n'));
