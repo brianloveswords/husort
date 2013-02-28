@@ -1,6 +1,8 @@
 # husort
 [![Build Status](https://secure.travis-ci.org/brianloveswords/husort.png?branch=master)](http://travis-ci.org/brianloveswords/husort)
 
+Numerically sort lines that start with human-readable file sizes, e.g. "32.3G ./Movies"
+
 # Install
 ```bash
 $ npm install -g husort
