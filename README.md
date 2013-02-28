@@ -16,7 +16,7 @@ $ npm install -g husort
 $ du -h /path/ | husort
 ```
 Options:
-* -r|--reverse: reverse the order of the sorting.
+* `-r | --reverse`: reverse the order of the sorting.
 
 ## Library
 
