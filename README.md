@@ -26,6 +26,24 @@ Options:
 Sort an array of strings where each entry is prefixed by (potentially)
 human readable file sizes.
 
+## Why not just use `sort -h`
+
+Because when I wrote this I didn't realize `sort -h` was possible – the
+native OS X `sort` doesn't have that option. It turns out you can get a
+version that does, though:
+
+```bash
+$ brew install coreutils
+$ brew link coreutils
+$ # now you have a `gsort` bin that supports -h
+```
+
+I'll still leave this library/repo kicking around because the library
+itself might be useful to someone
+
+(Thanks to [@mrtazz](https://twitter.com/mrtazz), who pointed out the
+existence of `sort -h`)
+
 # License
 
 MIT
