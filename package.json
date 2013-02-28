@@ -1,6 +1,6 @@
 {
   "name": "husort",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Human-readable filesize sorter",
   "main": "index.js",
   "directories": {
@@ -8,7 +8,6 @@
   },
   "bin": "bin/husort",
   "dependencies": {
-    "line-stream": "~0.0.0",
     "optimist": "~0.3.5"
   },
   "devDependencies": {
