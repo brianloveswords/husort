@@ -3,7 +3,7 @@
 
 # Install
 ```bash
-$ npm install husort
+$ npm install -g husort
 ```
 
 # Usage
